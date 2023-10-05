@@ -1,0 +1,24 @@
+function chunk(arr,n){
+   
+    const result=[];
+    let chunkArr=[];
+    for(let i=0;i<arr.length;i++){
+        chunkArr.push(arr[i])
+        if(chunkArr.length===n || i===arr.length-1){
+            result.push([...chunkArr])
+            chunkArr=[]
+            
+        }
+    }
+    return result;
+    
+}
+const arr1 = [1, 4, 12, 3, 2, 6, -9, 0];
+const n1=3;
+console.log(chunk(arr1,n1))
+
+const arr2 = [1, 4, 12, 3, 2, 6, -9, 0];
+const n2=4;
+console.log(chunk(arr2,n2))
+
+
