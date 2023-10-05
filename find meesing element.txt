@@ -1,0 +1,13 @@
+function findmessingnumber(arr){
+   const messingnumber =[];
+    for(let i=1;i<=10;i++){
+        //f does not exist?
+        if(!arr.includes(i)){
+            messingnumber.push(i);
+        }
+    }
+    return messingnumber;
+}
+const givenarray =[2,4,5,6,8]
+const messingnumber = findmessingnumber(givenarray)
+console.log("messing element",messingnumber)
