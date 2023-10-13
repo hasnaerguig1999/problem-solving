@@ -1,0 +1,17 @@
+function reverseInteger(num) {
+  // Convertir lentier en chaine de caracteres
+  let numStr = Math.abs(num).toString();
+
+  // Inverser  chaîne de caracteres
+  let reversedStr = numStr.split('').reverse().join('');
+
+  // Garder le signe
+  let result = parseInt(reversedStr) * Math.sign(num);
+  return result;
+}
+
+
+console.log(reverseInteger(51));    // Résultat: 15
+console.log(reverseInteger(500));   
+console.log(reverseInteger(-15));   
+console.log(reverseInteger(-900));  
